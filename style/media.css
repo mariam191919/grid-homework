@@ -1,0 +1,37 @@
+@media (max-width: 1125px) {
+    .card-grid  {
+        grid-template-columns: repeat(2, minmax(200px,250px));
+        grid-template-rows: repeat(8, 180px);
+        grid-template-areas: 
+        "sale1 sale1"
+        "sale2 sale2"
+        "product1 product2"
+        "product1 product2"
+        "sale3 sale3"
+        "sale4 sale4"
+        "product3 product4"
+        "product3 product4"
+    }
+}
+
+
+@media (max-width: 480px) {
+    .card-grid  {
+        width: 100%;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(12,140px);
+        grid-template-areas: 
+        "sale1"
+        "sale2"
+        "product1"
+        "product1"
+        "product2"
+        "product2"
+        "sale3"
+        "sale4"
+        "product3"
+        "product3"
+        "product4"
+        "product4"
+    }
+}
